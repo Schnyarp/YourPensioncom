@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>yourpension.com — Premium Domain For Sale</title>
+  <meta name="description" content="yourpension.com — premium domain ideal for retirement platforms, pension administration, retirement planning tools, fintech services and employee benefit solutions. Submit an offer to purchase." />
+  <meta property="og:title" content="yourpension.com — Premium Domain For Sale" />
+  <meta property="og:description" content="yourpension.com — premium domain for pension platforms, retirement planning, corporate benefits and financial planning services. Contact domain@yourpension.com" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f5f7b" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    :root{
+      --max-width:1120px;
+      --bg-top:#f6fbfc;
+      --bg-bottom:#eef7fa;
+      --muted:#6b7c81;
+      --ink:#07292c;
+      --accent-deep:#0f5f7b;
+      --accent-gold:#ffd36b;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.7);
+      --radius:14px;
+      --shadow: 0 28px 90px rgba(6,18,20,0.06);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:36px 20px;
+      color:var(--ink);
+      background:
+        radial-gradient(900px 320px at 12% 12%, rgba(15,95,123,0.03), transparent 12%),
+        linear-gradient(180deg,var(--bg-top) 0%, var(--bg-bottom) 100%);
+      line-height:1.5;
+      overflow-x:hidden;
+    }
+
+    /* Chosen look: "Calm trusted retirement platform" —
+       - soft horizon + rising bars motif suggesting growth and stability
+       - subtle safe/piggy / shield watermark for trust
+       - palette: teal blues with warm gold accent
+       - decorative layers are pointer-events:none so they don't block interaction
+    */
+    .bg { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+
+    .horizon {
+      position:fixed;
+      left:50%;
+      top:8%;
+      width:1100px;
+      height:360px;
+      transform:translateX(-50%);
+      z-index:0;
+      pointer-events:none;
+      background:
+        radial-gradient(420px 140px at 18% 18%, rgba(15,95,123,0.04), transparent 12%),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1100 360'><g fill='%23000000' fill-opacity='0.03'><path d='M20 240 C120 180 260 220 380 160 C500 100 620 180 760 140 C900 100 1040 160 1080 120'/></g></svg>") no-repeat center;
+      background-size:cover;
+      mix-blend-mode:multiply;
+      opacity:0.95;
+    }
+
+    .safe {
+      position:fixed;
+      right:6%;
+      top:10%;
+      width:320px;
+      height:320px;
+      z-index:0;
+      pointer-events:none;
+      opacity:0.06;
+      background-image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'><g fill='%23000000' fill-opacity='0.06'><rect x='32' y='40' width='256' height='224' rx='18'/><circle cx='160' cy='152' r='28'/></g></svg>");
+      background-repeat:no-repeat;
+      background-size:contain;
+      mix-blend-mode:screen;
+    }
+
+    .growth-bars {
+      position:fixed;
+      left:6%;
+      bottom:6%;
+      width:520px;
+      height:200px;
+      z-index:0;
+      pointer-events:none;
+      opacity:0.06;
+      background-image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 200'><g fill='%23000000' fill-opacity='0.04'><rect x='12' y='110' width='48' height='80' rx='6'/><rect x='80' y='76' width='48' height='114' rx='6'/><rect x='148' y='42' width='48' height='148' rx='6'/><rect x='216' y='98' width='48' height='92' rx='6'/><rect x='284' y='20' width='48' height='170' rx='6'/></g></svg>");
+      background-repeat:no-repeat;
+      background-size:contain;
+      mix-blend-mode:screen;
+    }
+
+    .icons {
+      position:fixed;
+      inset:0;
+      z-index:0;
+      pointer-events:none;
+      overflow:visible;
+    }
+
+    .icon {
+      position:absolute;
+      width:56px;
+      height:56px;
+      background-size:contain;
+      background-repeat:no-repeat;
+      opacity:0.12;
+      will-change:transform,opacity;
+      filter: drop-shadow(0 10px 22px rgba(6,18,20,0.06));
+    }
+
+    @keyframes floatSoft {
+      0% { transform: translateY(0) rotate(-4deg); }
+      50% { transform: translateY(-18px) rotate(6deg); }
+      100% { transform: translateY(0) rotate(-4deg); }
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      padding:36px;
+      border-radius:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.995), rgba(255,255,250,0.99));
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(6,18,20,0.03);
+      position:relative;
+      z-index:2;
+    }
+
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:18px;
+    }
+
+    .brand{ display:flex; gap:14px; align-items:center; }
+    .logo{
+      width:86px;
+      height:86px;
+      border-radius:14px;
+      background: linear-gradient(135deg,var(--accent-deep), var(--accent-gold));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#072827;
+      font-weight:900;
+      font-size:20px;
+      box-shadow: 0 12px 36px rgba(6,18,20,0.06);
+      flex-shrink:0;
+    }
+
+    h1{ margin:0; font-size:28px; color:var(--ink); }
+    p.lead{ margin:6px 0 0; color:var(--muted); font-size:14px; max-width:720px; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:28px;
+      align-items:start;
+      margin-top:8px;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, rgba(15,95,123,0.02), rgba(255,211,107,0.02));
+      padding:18px;
+      border-radius:12px;
+      color:var(--ink);
+      margin-bottom:16px;
+      border:1px solid rgba(6,18,20,0.03);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:18px;
+    }
+    .hero .left{ flex:1 }
+    .hero h2{ margin:0 0 8px 0; font-size:22px; color:var(--ink); }
+    .hero p{ margin:0; color:var(--muted); }
+
+    .panel {
+      background: var(--card);
+      color:var(--ink);
+      padding:22px;
+      border-radius:14px;
+      box-shadow: 0 10px 34px rgba(6,18,20,0.06);
+      border: 1px solid rgba(6,18,20,0.02);
+      max-width:820px;
+    }
+
+    h2.section { margin-top:0; font-size:20px; color:var(--ink); }
+    .features ul{ margin:0; padding-left:18px; color:var(--muted); }
+    .features li{ margin-bottom:10px; }
+
+    .usecases { display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+    .card {
+      min-width:140px;
+      padding:12px;
+      border-radius:10px;
+      background: linear-gradient(180deg,#fff,#fbfbfb);
+      border:1px solid rgba(6,18,20,0.03);
+      box-shadow: 0 8px 22px rgba(6,18,20,0.04);
+      font-weight:700;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .cta-row{ display:flex; gap:12px; margin-top:18px; flex-wrap:wrap; align-items:center; }
+    .btn{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:10px 16px;
+      border-radius:999px;
+      font-weight:800;
+      cursor:pointer;
+      text-decoration:none;
+      border:0;
+    }
+    .btn-primary{
+      background: linear-gradient(90deg,var(--accent-deep), var(--accent-gold));
+      color:#072827;
+      box-shadow: 0 10px 30px rgba(6,18,20,0.12);
+    }
+    .btn-ghost{
+      background:transparent;
+      border:1px solid rgba(6,18,20,0.06);
+      color:var(--muted);
+    }
+
+    .price { margin-top:12px; font-weight:800; color:var(--ink); font-size:16px; }
+    .muted-small { color:var(--muted); font-size:13px; margin-top:6px; }
+
+    .contact-card{
+      position:sticky;
+      top:32px;
+      align-self:start;
+      background: linear-gradient(180deg,#ffffff,#fbfbfb);
+      padding:18px;
+      border-radius:12px;
+      border:1px solid rgba(6,18,20,0.03);
+      box-shadow: 0 8px 26px rgba(6,18,20,0.035);
+      max-width:360px;
+    }
+
+    .contact-card h3{ margin:0 0 8px 0; font-size:16px; color:var(--ink); }
+    .contact-email, .contact-email a{
+      white-space:nowrap;
+      display:inline-block;
+      font-weight:800;
+      color:var(--accent-deep);
+      word-break: normal;
+      font-size:0.98rem;
+      text-decoration:none;
+    }
+
+    form label{ display:block; font-size:13px; color:var(--muted); margin-bottom:6px; }
+    form input, form textarea {
+      width:100%;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid rgba(6,18,20,0.06);
+      background:#fff;
+      color:var(--ink);
+      font-size:14px;
+      margin-bottom:12px;
+    }
+    form textarea{ min-height:110px; resize:vertical; }
+
+    footer{ margin-top:18px; color:var(--muted); font-size:13px; text-align:center; }
+
+    @media (max-width:980px){
+      .grid{ grid-template-columns: 1fr; gap:18px; }
+      .contact-card{ position:relative; top:auto; width:100%; max-width:none; }
+      .container{ padding:24px; }
+      .logo{ width:72px; height:72px; border-radius:12px; }
+      h1{ font-size:22px; }
+      .horizon, .safe, .growth-bars, .icons { display:none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "url":"https://yourpension.com",
+        "name":"yourpension.com",
+        "description":"yourpension.com — premium domain for pension platforms, retirement planning tools, employer benefit services and fintech solutions."
+      },
+      {
+        "@type":"ContactPoint",
+        "contactType":"sales",
+        "email":"domain@yourpension.com"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="horizon" aria-hidden="true"></div>
+    <div class="safe" aria-hidden="true"></div>
+    <div class="growth-bars" aria-hidden="true"></div>
+    <div class="icons" id="iconsLayer" aria-hidden="true"></div>
+  </div>
+
+  <main class="container" role="main" aria-labelledby="main-heading">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">YP</div>
+        <div>
+          <h1 id="main-heading">yourpension.com</h1>
+          <p class="lead">Premium domain for pension platforms, retirement planning, corporate benefits and financial wellness tools.</p>
+        </div>
+      </div>
+
+      <div style="text-align:right">
+        <div style="color:var(--muted);font-size:13px">For inquiries</div>
+        <div class="contact-email"><a href="mailto:domain@yourpension.com">domain@yourpension.com</a></div>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Main content">
+      <div>
+        <div class="hero" role="note" aria-live="polite">
+          <div class="left">
+            <h2 id="hero-title">A reassuring name for retirement services</h2>
+            <p>YourPension.com communicates trust, clarity and focus — ideal for platforms that manage retirement savings, employer pension administration, advisory services or financial-wellness products.</p>
+
+            <div class="cta-row" role="group" aria-label="Actions">
+              <a class="btn btn-primary" href="#" id="inquireBtn">Make an Offer</a>
+              <a class="btn btn-ghost" href="mailto:domain@yourpension.com?subject=Domain%20Offer%20-%20yourpension.com">Email Now</a>
+            </div>
+          </div>
+
+          <div style="min-width:200px; text-align:center">
+            <div style="color:var(--muted);font-size:13px">Domain</div>
+            <div style="font-weight:900; font-size:20px; margin-top:6px">yourpension.com</div>
+            <div style="color:var(--muted); font-size:13px; margin-top:8px">Serious offers only. Escrow recommended.</div>
+          </div>
+        </div>
+
+        <article class="panel" aria-labelledby="why-title">
+          <h2 class="section" id="why-title">Why yourpension.com?</h2>
+          <p class="lead">A concise, authoritative .com name that signals retirement and benefits focus. Suitable for consumer-facing retirement tools, B2B pension administration and advisory platforms.</p>
+
+          <div class="features" style="margin-top:12px">
+            <ul>
+              <li>Clear category signal — communicates pension & retirement expertise at a glance</li>
+              <li>Works for fintech, employer benefits, retirement planning, actuarial services and advisory brands</li>
+              <li>Brandable across web, dashboards, reporting, and client communications</li>
+            </ul>
+          </div>
+
+          <div class="usecases" aria-hidden="false">
+            <div class="card">Pension Admin</div>
+            <div class="card">Retirement Planner</div>
+            <div class="card">Employee Benefits</div>
+            <div class="card">Financial Wellness</div>
+          </div>
+        </article>
+
+        <article class="panel" style="margin-top:18px" aria-labelledby="about-title">
+          <h3 id="about-title" style="margin-top:0">About this domain</h3>
+          <p class="lead">YourPension.com is available for transfer. Use escrow for a secure and verifiable transaction.</p>
+
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Great for retirement platforms, employer pension services, advisory firms and SaaS benefits tools</li>
+            <li>Useful for regulated products, reporting portals, and white-label employer offerings</li>
+            <li>Transfer-ready — escrow recommended to ensure a secure and verifiable transfer</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="contact-card" aria-label="Contact & offer">
+        <div>
+          <h3 style="margin-top:0">Contact & Offer</h3>
+          <p style="margin-top:6px;color:var(--muted)">Submit an offer — this form opens your email client with the details prefilled. Or email <a href="mailto:domain@yourpension.com" class="contact-email">domain@yourpension.com</a>.</p>
+
+          <form id="inquiryForm" onsubmit="handleSubmit(event)" aria-label="Domain offer form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="offer">Your offer (USD)</label>
+            <input id="offer" name="offer" type="text" placeholder="Enter your offer (USD)" required />
+
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Your company or organization" />
+
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Your country" required />
+
+            <label for="phone">Phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" />
+
+            <label for="message">Message (questions, timeline, escrow preference)</label>
+            <textarea id="message" name="message" placeholder="Hi — I'm submitting an offer for yourpension.com. Please share transfer instructions and next steps."></textarea>
+
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:6px">Send Offer</button>
+          </form>
+
+          <footer style="margin-top:10px; text-align:left; color:var(--muted); font-size:13px">
+            Prefer a direct email? <a href="mailto:domain@yourpension.com" style="color:var(--accent-deep)" class="contact-email">domain@yourpension.com</a>
+          </footer>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      &copy; 2025 yourpension.com. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // floating icons (shield, piggy, chart, calendar) for subtle motion
+    (function placeIcons(){
+      const layer = document.getElementById('iconsLayer');
+      if(!layer) return;
+      const svgs = {
+        shield: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M32 6l22 8v14c0 18-12 30-22 34-10-4-22-16-22-34V14z' fill='%230f5f7b'/></svg>`),
+        piggy: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'><ellipse cx='32' cy='28' rx='18' ry='10' fill='%23FFD36B'/><circle cx='44' cy='22' r='2' fill='%23000000'/></svg>`),
+        chart: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='10' y='34' width='8' height='20' rx='2' fill='%230f5f7b'/><rect x='26' y='22' width='8' height='32' rx='2' fill='%23ffd36b'/><rect x='42' y='12' width='8' height='42' rx='2' fill='%236cc2a0'/></svg>`),
+        cal: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect x='6' y='10' width='36' height='30' rx='4' fill='%23ffffff' stroke='%23000000' stroke-opacity='0.06'/><path d='M14 6v8M34 6v8' stroke='%23000000' stroke-opacity='0.06' stroke-width='2'/></svg>`)
+      };
+
+      const items = [
+        {svg:svgs.shield, left:'10%', top:'20%', size:64, dur:10000},
+        {svg:svgs.piggy, left:'78%', top:'18%', size:56, dur:12000},
+        {svg:svgs.chart, left:'48%', top:'66%', size:64, dur:9000},
+        {svg:svgs.cal, left:'84%', top:'54%', size:48, dur:11000}
+      ];
+
+      items.forEach(it=>{
+        const el = document.createElement('div');
+        el.className = 'icon';
+        el.style.left = it.left;
+        el.style.top = it.top;
+        el.style.width = it.size + 'px';
+        el.style.height = it.size + 'px';
+        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${it.svg}")`;
+        el.style.animation = `floatSoft ${it.dur}ms ease-in-out ${Math.random()*1200}ms infinite`;
+        el.style.opacity = 0.06 + Math.random()*0.12;
+        layer.appendChild(el);
+      });
+    })();
+
+    // Compose mailto body and open user's email client
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const country = document.getElementById('country').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Domain Offer - yourpension.com');
+      const bodyText =
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Company: ${company || '(not provided)'}\n` +
+        `Offer (USD): ${offer}\n` +
+        `Country: ${country}\n` +
+        `Phone: ${phone || '(not provided)'}\n\n` +
+        `Message:\n${message}\n\n---\nSent from yourpension.com offer form`;
+
+      const body = encodeURIComponent(bodyText);
+      window.location.href = `mailto:domain@yourpension.com?subject=${subject}&body=${body}`;
+    }
+
+    // Inquire button: scroll to form on mobile, open mailto on desktop
+    document.getElementById('inquireBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      const form = document.getElementById('inquiryForm');
+      if(window.innerWidth < 900){
+        form.scrollIntoView({behavior:'smooth', block:'center'});
+        form.querySelector('input')?.focus();
+      } else {
+        const subject = encodeURIComponent('Domain Offer - yourpension.com');
+        const body = encodeURIComponent('Hi — I would like to make an offer for yourpension.com. Please reply with transfer instructions and next steps.');
+        window.location.href = `mailto:domain@yourpension.com?subject=${subject}&body=${body}`;
+      }
+    });
+  </script>
+</body>
+</html>
